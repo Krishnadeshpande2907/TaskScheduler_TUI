@@ -1,0 +1,10 @@
+taskscheduler
+*.exe
+.git
+.gitignore
+.env
+*.md
+.idea/
+.vscode/
+.dockerignore
+Dockerfile

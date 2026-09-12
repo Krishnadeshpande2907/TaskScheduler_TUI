@@ -40,6 +40,22 @@ go build -o taskscheduler ./cmd/taskscheduler/
 ./taskscheduler
 ```
 
+## Docker
+
+Build the image:
+
+```bash
+docker build -t taskscheduler .
+```
+
+Run the app:
+
+```bash
+docker run -it --rm -v "$HOME/.config/taskscheduler:/root/.config/taskscheduler" taskscheduler
+```
+
+The `-v` flag mounts your host's config directory so tasks persist between container runs. Remove `--rm` if you want the container to persist after exit.
+
 ## Keybindings
 
 ### Task List
